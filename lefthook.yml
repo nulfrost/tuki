@@ -1,0 +1,8 @@
+
+pre-commit:
+  parallel: true
+  commands:
+    format:
+      run: npx biome format --write .
+    lint:
+      run: npx biome lint .
