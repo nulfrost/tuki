@@ -8,3 +8,5 @@ build/
 
 # generated lexicon types
 app/__generated__
+
+.env
