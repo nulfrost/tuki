@@ -6,6 +6,7 @@
     "build": "react-router build",
     "dev": "react-router dev",
     "lint": "biome lint",
+    "lex-gen": "lex gen-api ./app/__generated__/lexicons ./lexicons/market/tuki/**/*.json",
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc"
   },
@@ -19,6 +20,7 @@
     "react-router": "^7.7.1"
   },
   "devDependencies": {
+    "@atproto/lex-cli": "^0.9.0",
     "@biomejs/biome": "^2.1.2",
     "@react-router/dev": "^7.7.1",
     "@tailwindcss/vite": "^4.1.4",

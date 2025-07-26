@@ -5,3 +5,6 @@ build/
 
 # React Router
 /.react-router/
+
+# generated lexicon types
+app/__generated__
