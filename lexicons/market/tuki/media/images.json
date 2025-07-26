@@ -5,9 +5,7 @@
   "defs": {
     "main": {
       "type": "object",
-      "required": [
-        "images"
-      ],
+      "required": ["images"],
       "properties": {
         "images": {
           "type": "array",
@@ -21,16 +19,11 @@
     },
     "image": {
       "type": "object",
-      "required": [
-        "image",
-        "alt"
-      ],
+      "required": ["image", "alt"],
       "properties": {
         "image": {
           "type": "blob",
-          "accept": [
-            "image/*"
-          ],
+          "accept": ["image/*"],
           "maxSize": 1000000
         },
         "alt": {

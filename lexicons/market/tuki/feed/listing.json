@@ -7,11 +7,7 @@
       "key": "tid",
       "record": {
         "type": "object",
-        "required": [
-          "title",
-          "description",
-          "createdAt"
-        ],
+        "required": ["title", "description", "createdAt"],
         "properties": {
           "title": {
             "type": "string",
@@ -25,9 +21,7 @@
           },
           "media": {
             "type": "union",
-            "refs": [
-              "market.tuki.media.images"
-            ]
+            "refs": ["market.tuki.media.images"]
           },
           "price": {
             "type": "integer",
