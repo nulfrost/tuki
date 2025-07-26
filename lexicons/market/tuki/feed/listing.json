@@ -1,0 +1,57 @@
+{
+  "lexicon": 1,
+  "id": "market.tuki.feed.listing",
+  "defs": {
+    "main": {
+      "type": "record",
+      "key": "tid",
+      "record": {
+        "type": "object",
+        "required": [
+          "title",
+          "description",
+          "createdAt"
+        ],
+        "properties": {
+          "title": {
+            "type": "string",
+            "maxLength": 200,
+            "maxGraphemes": 20
+          },
+          "description": {
+            "type": "string",
+            "maxLength": 3000,
+            "maxGraphemes": 300
+          },
+          "media": {
+            "type": "union",
+            "refs": [
+              "market.tuki.media.images"
+            ]
+          },
+          "price": {
+            "type": "integer",
+            "maximum": 999999
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "datetime",
+            "description": "Client-declared timestamp when this post was originally created."
+          },
+          "category": {
+            "type": "string",
+            "knownValues": [
+              "market.tuki.defs#furniture",
+              "market.tuki.defs#electronics",
+              "market.tuki.defs#clothing",
+              "market.tuki.defs#booksAndMedia",
+              "market.tuki.defs#homeAndGarden",
+              "market.tuki.defs#toysAndGames",
+              "market.tuki.defs#free"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

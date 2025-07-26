@@ -1,0 +1,34 @@
+{
+  "lexicon": 1,
+  "id": "market.tuki.feed.defs",
+  "defs": {
+    "furniture": {
+      "type": "token",
+      "description": "Sofas, chairs, tables, shelves, and more."
+    },
+    "electronics": {
+      "type": "token",
+      "description": "Phones, laptops, TVs, speakers, and gadgets."
+    },
+    "clothing": {
+      "type": "token",
+      "description": "Apparel, shoes, and accessories for all."
+    },
+    "booksAndMedia": {
+      "type": "token",
+      "description": "Books, games, movies, music, and more."
+    },
+    "homeAndGarden": {
+      "type": "token",
+      "description": "Plants, decor, outdoor and DIY supplies."
+    },
+    "toysAndGames": {
+      "type": "token",
+      "description": "Toys, puzzles, board games, and collectibles."
+    },
+    "free": {
+      "type": "token",
+      "description": "Items available for free — just take them!"
+    }
+  }
+}
